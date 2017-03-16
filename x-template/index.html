@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <script id="my-form" type="text/x-template">
+      <form>
+        <my-button v-on:click_button="onSubmit">Click me!</my-button>
+      </form>
+    </script>
+    
+    <script id="timer" type="text/x-template">
+      <p>
+        今は{{(time%2)!=0 ? "奇数" : "偶数"}}秒です({{time}}秒経過しました)
+      </p>
+    </script>
+
+  </head>
+  <body>
+    <div id="app">
+      <timer :time="time"></timer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js"></script>
+    <script src="timer.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
