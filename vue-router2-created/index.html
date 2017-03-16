@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <script id="page" type="text/x-template">
+      <form>
+        <p>
+          {{name}}
+        </p>
+      </form>
+    </script>
+
+  </head>
+  <body>
+    <div id="app">
+      <p>
+        <router-link to="/pages/1">page 1</router-link>
+        <router-link to="/pages/2">page 2</router-link>
+      </p>
+      <router-view></router-view>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router@2.3.0/dist/vue-router.js"></script>
+    <script src="page_base.js"></script>
+    <script src="page_1.js"></script>
+    <script src="page_2.js"></script>
+    <script src="home.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
